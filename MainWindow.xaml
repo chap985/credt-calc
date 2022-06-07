@@ -1,0 +1,74 @@
+﻿<Window x:Class="Кредитный_калькулятор.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Кредитный_калькулятор"
+        mc:Ignorable="d"
+        Title="Кредитный калькулятор" Height="500" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Label Content="Сумма кредита (руб)"/>
+                <TextBox Name="sum" Text="0" Margin="10,0,10,0" />
+                <Label Content="Процентная ставка (% годовых)" />
+                <TextBox Name="percent" Text="14,5" Margin="10,0,10,0" />
+                <Label Content="Срок (месяцы)" />
+                <TextBox Name="months" Text="36" Margin="10,0,10,0" />
+                <Label Content="Вид платежа" />
+                <RadioButton Name="typeOne" Margin="20,0,0,0" Content="Аннуитентный"/>
+                <RadioButton Name="typeTwo" Margin="20,0,0,0" Content="Дифферинцированный"/>
+                <StackPanel Orientation="Horizontal" Margin="10,20,10,0">
+                    <Button Content="Очистить данные" Margin="10,0,10,0" Width="170" ClickMode="Press" 
+                            Click="Button_Click" 
+                            Background="#1e1e1e" 
+                            Foreground="White" 
+                            FontFamily="Bahnschrift" 
+                            FontWeight="Light">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="12" Color="#1e1e1e" Opacity="0.4"></DropShadowEffect>
+                        </Button.Effect>
+                    </Button>
+                    <Button Content="Провести расчёты" Margin="10,0,10,0" Width="170" ClickMode="Press" 
+                            Click="Button_Click_1" 
+                            Background="#1e1e1e" 
+                            Foreground="White" 
+                            FontFamily="Bahnschrift" 
+                            FontWeight="Light">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="12" Color="#1e1e1e" Opacity="0.4"></DropShadowEffect>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label Content="Результаты" HorizontalContentAlignment="Center" FontFamily="Bahnschrift" FontWeight="UltraBold"/>
+                <Label Content="Сумма кредита (руб)" />
+                <TextBox Name="itog" Text="" Margin="10,0,10,0" IsEnabled="False" />
+                <Label Content="Ежемесячная ставка (%)" />
+                <TextBox Name="monpercent" Text="" Margin="10,0,10,0" IsEnabled="False" />
+                <Label Content="Переплата" />
+                <TextBox Name="overp" Text="" Margin="10,0,10,0" IsEnabled="False" />
+                <Label Content="Ежемесячный платеж" />
+                <TextBox Name="everymon" Text="" Margin="10,0,10,0" IsEnabled="False" />
+            </StackPanel>
+        </Grid>
+        <DataGrid Name="MyData" 
+                  Grid.Row="1" 
+                  Margin="5,5,5,5" MouseDoubleClick="MyData_OnMouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Остаток задолженности" Binding="{Binding Path=CreditAmount}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Начисленные проценты" Binding="{Binding Path=Precent}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Основной долг" Binding="{Binding Path=MainDebt}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,46 @@
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.exe
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.deps.json
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.runtimeconfig.json
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.dll
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\ref\Кредитный калькулятор.dll
+C:\Users\Administrator\source\repos\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.pdb
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор_MarkupCompile.cache
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор_MarkupCompile.lref
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.g.resources
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.dll
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\ref\Кредитный калькулятор.dll
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.pdb
+C:\Users\Administrator\source\repos\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.genruntimeconfig.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.exe
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.deps.json
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.runtimeconfig.json
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.runtimeconfig.dev.json
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Кредитный калькулятор.pdb
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.AssemblyReference.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор_MarkupCompile.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор_MarkupCompile.lref
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.g.resources
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.AssemblyInfoInputs.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.AssemblyInfo.cs
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.CoreCompileInputs.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\refint\Кредитный калькулятор.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.pdb
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.genruntimeconfig.cache
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\ref\Кредитный калькулятор.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.CopyComplete
