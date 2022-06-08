@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Кредитный калькулятор", "Кредитный калькулятор.csproj", "{C3783A2C-0C90-4F11-90E2-74E2E3ACB58A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3783A2C-0C90-4F11-90E2-74E2E3ACB58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3783A2C-0C90-4F11-90E2-74E2E3ACB58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3783A2C-0C90-4F11-90E2-74E2E3ACB58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3783A2C-0C90-4F11-90E2-74E2E3ACB58A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D507F032-EAA5-4624-9F37-7720CFB3A393}
+	EndGlobalSection
+EndGlobal
