@@ -21,8 +21,8 @@
                 <TextBox Name="sum" Text="0" Margin="10,0,10,0" />
                 <Label Content="Процентная ставка (% годовых)" />
                 <TextBox Name="percent" Text="14,5" Margin="10,0,10,0" />
-                <Label Content="Срок (месяцы)" />
-                <TextBox Name="months" Text="36" Margin="10,0,10,0" />
+                <Label Content="Срок (мес.)" />
+                <TextBox Name="months" Text="12" Margin="10,0,10,0" />
                 <Label Content="Вид платежа" />
                 <RadioButton Name="typeOne" Margin="20,0,0,0" Content="Аннуитентный"/>
                 <RadioButton Name="typeTwo" Margin="20,0,0,0" Content="Дифферинцированный"/>
@@ -51,13 +51,13 @@
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <Label Content="Результаты" HorizontalContentAlignment="Center" FontFamily="Bahnschrift" FontWeight="UltraBold"/>
-                <Label Content="Сумма кредита (руб)" />
+                <Label Content="Сумма платежа (руб)" />
                 <TextBox Name="itog" Text="" Margin="10,0,10,0" IsEnabled="False" />
                 <Label Content="Ежемесячная ставка (%)" />
                 <TextBox Name="monpercent" Text="" Margin="10,0,10,0" IsEnabled="False" />
-                <Label Content="Переплата" />
+                <Label Content="Переплата (Начисленные проценты)" />
                 <TextBox Name="overp" Text="" Margin="10,0,10,0" IsEnabled="False" />
-                <Label Content="Ежемесячный платеж" />
+                <Label Content="Ежемесячный платеж (Платёж раз в месяц)" />
                 <TextBox Name="everymon" Text="" Margin="10,0,10,0" IsEnabled="False" />
             </StackPanel>
         </Grid>
@@ -65,9 +65,12 @@
                   Grid.Row="1" 
                   Margin="5,5,5,5" MouseDoubleClick="MyData_OnMouseDoubleClick">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Остаток задолженности" Binding="{Binding Path=CreditAmount}" IsReadOnly="True" />
-                <DataGridTextColumn Header="Начисленные проценты" Binding="{Binding Path=Precent}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="№ платежа" Binding="{Binding Path=NumberPayment}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Дата платежа" Binding="{Binding Path=DataPayment}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Сумма платежа" Binding="{Binding Path=PaymentSum}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Основной долг" Binding="{Binding Path=MainDebt}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Начисленные проценты" Binding="{Binding Path=Precent}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Остаток задолженности" Binding="{Binding Path=CreditAmount}" IsReadOnly="True" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

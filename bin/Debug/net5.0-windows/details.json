@@ -1,122 +1,127 @@
 ﻿[
   {
-    "CreditAmount": "200 000,00",
-    "Precent": "2 000,00",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "191 666,67",
-    "Precent": "1 916,67",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "183 333,33",
-    "Precent": "1 833,33",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "175 000,00",
-    "Precent": "1 750,00",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "166 666,67",
-    "Precent": "1 666,67",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "158 333,33",
-    "Precent": "1 583,33",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "150 000,00",
-    "Precent": "1 500,00",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "141 666,67",
-    "Precent": "1 416,67",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "133 333,33",
-    "Precent": "1 333,33",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "125 000,00",
-    "Precent": "1 250,00",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "116 666,67",
-    "Precent": "1 166,67",
-    "MainDebt": "8 333,33"
-  },
-  {
-    "CreditAmount": "108 333,33",
-    "Precent": "1 083,33",
-    "MainDebt": "8 333,33"
-  },
-  {
     "CreditAmount": "100 000,00",
     "Precent": "1 000,00",
-    "MainDebt": "8 333,33"
+    "MainDebt": "3 707,35"
   },
   {
-    "CreditAmount": "91 666,67",
-    "Precent": "916,67",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "96 292,65",
+    "Precent": "962,93",
+    "MainDebt": "3 744,42"
   },
   {
-    "CreditAmount": "83 333,33",
-    "Precent": "833,33",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "92 548,23",
+    "Precent": "925,48",
+    "MainDebt": "3 781,86"
   },
   {
-    "CreditAmount": "75 000,00",
-    "Precent": "750,00",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "88 766,37",
+    "Precent": "887,66",
+    "MainDebt": "3 819,68"
   },
   {
-    "CreditAmount": "66 666,67",
-    "Precent": "666,67",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "84 946,68",
+    "Precent": "849,47",
+    "MainDebt": "3 857,88"
   },
   {
-    "CreditAmount": "58 333,33",
-    "Precent": "583,33",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "81 088,80",
+    "Precent": "810,89",
+    "MainDebt": "3 896,46"
   },
   {
-    "CreditAmount": "50 000,00",
-    "Precent": "500,00",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "77 192,34",
+    "Precent": "771,92",
+    "MainDebt": "3 935,42"
   },
   {
-    "CreditAmount": "41 666,67",
-    "Precent": "416,67",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "73 256,92",
+    "Precent": "732,57",
+    "MainDebt": "3 974,78"
   },
   {
-    "CreditAmount": "33 333,33",
-    "Precent": "333,33",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "69 282,14",
+    "Precent": "692,82",
+    "MainDebt": "4 014,53"
   },
   {
-    "CreditAmount": "25 000,00",
-    "Precent": "250,00",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "65 267,62",
+    "Precent": "652,68",
+    "MainDebt": "4 054,67"
   },
   {
-    "CreditAmount": "16 666,67",
-    "Precent": "166,67",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "61 212,95",
+    "Precent": "612,13",
+    "MainDebt": "4 095,22"
   },
   {
-    "CreditAmount": "8 333,33",
-    "Precent": "83,33",
-    "MainDebt": "8 333,33"
+    "CreditAmount": "57 117,73",
+    "Precent": "571,18",
+    "MainDebt": "4 136,17"
+  },
+  {
+    "CreditAmount": "52 981,56",
+    "Precent": "529,82",
+    "MainDebt": "4 177,53"
+  },
+  {
+    "CreditAmount": "48 804,03",
+    "Precent": "488,04",
+    "MainDebt": "4 219,31"
+  },
+  {
+    "CreditAmount": "44 584,72",
+    "Precent": "445,85",
+    "MainDebt": "4 261,50"
+  },
+  {
+    "CreditAmount": "40 323,22",
+    "Precent": "403,23",
+    "MainDebt": "4 304,12"
+  },
+  {
+    "CreditAmount": "36 019,10",
+    "Precent": "360,19",
+    "MainDebt": "4 347,16"
+  },
+  {
+    "CreditAmount": "31 671,95",
+    "Precent": "316,72",
+    "MainDebt": "4 390,63"
+  },
+  {
+    "CreditAmount": "27 281,32",
+    "Precent": "272,81",
+    "MainDebt": "4 434,53"
+  },
+  {
+    "CreditAmount": "22 846,79",
+    "Precent": "228,47",
+    "MainDebt": "4 478,88"
+  },
+  {
+    "CreditAmount": "18 367,91",
+    "Precent": "183,68",
+    "MainDebt": "4 523,67"
+  },
+  {
+    "CreditAmount": "13 844,24",
+    "Precent": "138,44",
+    "MainDebt": "4 568,90"
+  },
+  {
+    "CreditAmount": "9 275,33",
+    "Precent": "92,75",
+    "MainDebt": "4 614,59"
+  },
+  {
+    "CreditAmount": "4 660,74",
+    "Precent": "46,61",
+    "MainDebt": "4 660,74"
+  },
+  {
+    "CreditAmount": "0,00",
+    "Precent": "0,00",
+    "MainDebt": "4 707,35"
   }
 ]

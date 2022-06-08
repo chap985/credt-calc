@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
+using iTextSharp.text.pdf;
 
 namespace Кредитный_калькулятор
 {
@@ -16,6 +15,9 @@ namespace Кредитный_калькулятор
     {
         public class Data
         {
+            public string DataPayment { get; set; }
+            public string NumberPayment { get; set; }
+            public string PaymentSum { get; set; }
             public string CreditAmount { get; set; }
             public string Precent { get; set; }
             public string MainDebt { get; set; }
@@ -67,49 +69,30 @@ namespace Кредитный_калькулятор
                 //var textType = "Аннуитентный";
                 var dates = int.Parse(months.Text);
                 var interestRateMonth = myPercent / 100 / 12;
-                var interestСharges = creditAmount * interestRateMonth;
+                var interestСharges = creditAmount * interestRateMonth; // Получаем процентную часть
                 double isSum;
                 double overpayment;
-                
-                itog.Text = creditAmount.ToString("N2");
-                monpercent.Text = interestRateMonth.ToString("N2");
+                var today = DateTime.Now; // Получение сегодняшней даты
+                int addDays = 0; // + кол-во дней для нужной даты платежа
+                double paymentSum;
+                double mainDebt;
 
                 if (typeOne.IsChecked != null && (bool)typeOne.IsChecked)
                 {
                     isSum = PaymentScheduleAnnuitet(sumCredit:creditAmount, interestRateMonth: interestRateMonth, 
                                                     creditPeriod:dates);
                     overpayment = (isSum * dates) - creditAmount;
-                    var mainDebt = isSum - (creditAmount * interestRateMonth);
-                    for (int i = 0; i != 1;)
-                    {
-                        Data tempData = new();
-                        tempData.CreditAmount = creditAmount.ToString("N2");
-                        tempData.Precent = interestСharges.ToString("N2");
-                        tempData.MainDebt = mainDebt.ToString("N2");
-                        MyData.Items.Add(tempData);
-
-                        creditAmount = creditAmount - mainDebt;
-                        interestСharges = creditAmount * interestRateMonth;
-                        mainDebt = isSum - (creditAmount * interestRateMonth);
-                        if (creditAmount <= 0) break;
-                    }
+                    mainDebt = isSum - (creditAmount * interestRateMonth);
+                    creditAmount = creditAmount - mainDebt;
+                    paymentSum = mainDebt + interestСharges;
                 }
                 else if (typeTwo.IsChecked != null && (bool)typeTwo.IsChecked)
                 {
                     isSum = PaymentScheduleDiffer(sumCredit: creditAmount, creditPeriod: dates);
-                    overpayment = (isSum * dates) - creditAmount;
-                    for (int i = 0; i != 1;)
-                    {
-                        Data tempData = new();
-                        tempData.CreditAmount = creditAmount.ToString("N2");
-                        tempData.Precent = interestСharges.ToString("N2");
-                        tempData.MainDebt = isSum.ToString("N2");
-                        MyData.Items.Add(tempData);
-                        
-                        creditAmount = creditAmount - isSum;
-                        interestСharges = creditAmount * interestRateMonth;
-                        if (creditAmount <= 0) break;
-                    }
+                    mainDebt = isSum;
+                    overpayment = interestСharges;
+                    creditAmount = creditAmount - isSum;
+                    paymentSum = mainDebt + interestСharges;
                 }
                 else
                 {
@@ -117,7 +100,34 @@ namespace Кредитный_калькулятор
                     return;
                 }
                 
-                overp.Text = (overpayment).ToString("N1");
+                for (int i = 1; interestСharges > 1; i++)
+                {
+                    Data tempData = new();
+                    tempData.NumberPayment = i.ToString();
+                    tempData.CreditAmount = creditAmount.ToString("N2");
+                    tempData.Precent = interestСharges.ToString("N2");
+                    tempData.MainDebt = mainDebt.ToString("N2");
+                    tempData.DataPayment = today.AddDays(addDays).ToString("Y");
+                    tempData.PaymentSum = paymentSum.ToString("N2");
+                    MyData.Items.Add(tempData);
+                        
+                    interestСharges = creditAmount * interestRateMonth;
+                    mainDebt = isSum - (creditAmount * interestRateMonth);
+                    if (typeTwo.IsChecked != null && (bool)typeTwo.IsChecked)
+                    {
+                         mainDebt = isSum;
+                         overpayment += interestСharges;
+                    }
+                    creditAmount = creditAmount - mainDebt;
+                    paymentSum = mainDebt + interestСharges;
+                    addDays += 30;
+                    if (creditAmount < 0) creditAmount = 0;
+                }
+                
+                var sumPayment = double.Parse(sum.Text) + overpayment;
+                itog.Text = sumPayment.ToString("N2");
+                monpercent.Text = interestRateMonth.ToString("N2");
+                overp.Text = overpayment.ToString("N1");
                 everymon.Text = isSum.ToString("N2");
             }
             catch (Exception exception)
@@ -150,13 +160,23 @@ namespace Кредитный_калькулятор
                 return;
             }
             
-            var saveFile = MessageBox.Show(
-                "Сохранить данные в json формате?", "Сохранение файла", 
-                MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (saveFile == MessageBoxResult.Yes)
+            toFormat form = new toFormat();
+            form.ShowDialog();
+            string nameFile = form.nameFile.Text;
+            string typeFile = form.formatFile.Text;
+            string pathFile = $"saved_{typeFile}/{nameFile}.{typeFile}";
+            // var saveFile = MessageBox.Show(
+            //     "Сохранить данные в json формате?", "Сохранение файла", 
+            //     MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            if (typeFile == "json")
             {
                 string jsonSerialize = JsonConvert.SerializeObject(MyData.Items, Formatting.Indented);
-                File.WriteAllText("details.json", jsonSerialize, Encoding.UTF8);
+                File.WriteAllText(pathFile, jsonSerialize, Encoding.UTF8);
+                MessageBox.Show($"Файл успешно создан! Путь: {pathFile}");
+            }
+            if (typeFile == "pdf")
+            {
+                MessageBox.Show($"Файл успешно создан! Путь: {pathFile}");
             }
         }
     }

@@ -44,3 +44,7 @@ C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный 
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\ref\Кредитный калькулятор.dll
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\Кредитный калькулятор.csproj.CopyComplete
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\toFormat.g.cs
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\toFormat.baml
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\itextsharp.dll
