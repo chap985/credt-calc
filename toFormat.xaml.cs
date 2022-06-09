@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using OfficeOpenXml;
 
 namespace Кредитный_калькулятор
 {
@@ -22,14 +23,23 @@ namespace Кредитный_калькулятор
             string typeFile = formatFile.Text;//.SelectedItem.ToString();
             try
             {
-                string nFile = $"saved_{typeFile}/{nameFile.Text}.{typeFile}";
-                FileInfo file = new FileInfo(nFile);
-                if (file.Exists) { MessageBox.Show("Такой файл уже существует!"); return; }
-                File.WriteAllText(nFile, "");
+                // if (typeFile == "xls")
+                // {
+                //     var package = new ExcelPackage();
+                //     var sheet = package.Workbook.Worksheets.Add("Credit Result"); 
+                //     //MessageBox.Show($"Файл успешно создан! Путь: {pathFile}");
+                // }
+                if (typeFile != "xls")
+                {
+                    string nFile = $"saved_{typeFile}/{nameFile.Text}.{typeFile}";
+                    FileInfo file = new FileInfo(nFile);
+                    if (file.Exists) { MessageBox.Show("Такой файл уже существует!"); return; }
+                    File.WriteAllText(nFile, "");   
+                }
             }
-            catch
+            catch (Exception er)
             {
-                MessageBox.Show(@"Название файла не может содержать ( \ / : < > )"); return;
+                MessageBox.Show($@"Название файла не может содержать ( \ / : < > ) {er}"); return;
             }
             Close();
         }

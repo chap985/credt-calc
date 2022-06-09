@@ -1,10 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
 using iTextSharp.text.pdf;
+using OfficeOpenXml;
 
 namespace Кредитный_калькулятор
 {
@@ -16,11 +19,12 @@ namespace Кредитный_калькулятор
         public class Data
         {
             public string DataPayment { get; set; }
-            public string NumberPayment { get; set; }
+            public int NumberPayment { get; set; }
             public string PaymentSum { get; set; }
             public string CreditAmount { get; set; }
             public string Precent { get; set; }
             public string MainDebt { get; set; }
+
         }
         public MainWindow()
         {
@@ -38,7 +42,7 @@ namespace Кредитный_калькулятор
             typeTwo.IsChecked = false;
 
             itog.Text = "";
-            monpercent.Text = "";
+            // monpercent.Text = "";
             overp.Text = "";
             everymon.Text = "";
 
@@ -66,7 +70,6 @@ namespace Кредитный_калькулятор
                 }
                 
                 var myPercent = double.Parse(percent.Text.Replace(".", ","));
-                //var textType = "Аннуитентный";
                 var dates = int.Parse(months.Text);
                 var interestRateMonth = myPercent / 100 / 12;
                 var interestСharges = creditAmount * interestRateMonth; // Получаем процентную часть
@@ -103,14 +106,14 @@ namespace Кредитный_калькулятор
                 for (int i = 1; interestСharges > 1; i++)
                 {
                     Data tempData = new();
-                    tempData.NumberPayment = i.ToString();
+                    tempData.NumberPayment = Convert.ToInt32(i.ToString());
                     tempData.CreditAmount = creditAmount.ToString("N2");
                     tempData.Precent = interestСharges.ToString("N2");
                     tempData.MainDebt = mainDebt.ToString("N2");
                     tempData.DataPayment = today.AddDays(addDays).ToString("Y");
                     tempData.PaymentSum = paymentSum.ToString("N2");
                     MyData.Items.Add(tempData);
-                        
+
                     interestСharges = creditAmount * interestRateMonth;
                     mainDebt = isSum - (creditAmount * interestRateMonth);
                     if (typeTwo.IsChecked != null && (bool)typeTwo.IsChecked)
@@ -126,7 +129,7 @@ namespace Кредитный_калькулятор
                 
                 var sumPayment = double.Parse(sum.Text) + overpayment;
                 itog.Text = sumPayment.ToString("N2");
-                monpercent.Text = interestRateMonth.ToString("N2");
+                // monpercent.Text = interestRateMonth.ToString("N2");
                 overp.Text = overpayment.ToString("N1");
                 everymon.Text = isSum.ToString("N2");
             }
@@ -178,6 +181,56 @@ namespace Кредитный_калькулятор
             {
                 MessageBox.Show($"Файл успешно создан! Путь: {pathFile}");
             }
+            if (typeFile == "xls")
+            {
+                byte[] generated = GenerateXls();
+                File.WriteAllBytes(path:pathFile, bytes:generated);
+                MessageBox.Show($"Файл успешно создан! Путь: {pathFile}");
+            }
+        }
+
+        private byte[] GenerateXls()
+        {
+            /*
+             * Добавление данных в excel файл
+             */
+            int row = 0;
+            var package = new ExcelPackage();
+            var sheet = package.Workbook.Worksheets.Add("Credit Result");
+            
+            sheet.Cells[1, 1].Value = "Дата";
+            sheet.Cells[1, 2].Value = "Сумма платежа";
+            sheet.Cells[1, 3].Value = "Основной долг";
+            sheet.Cells[1, 4].Value = "Начисленные проценты";
+            sheet.Cells[1, 5].Value = "Остаток задолженности";
+            sheet.Column(1).Width = 25;
+            sheet.Column(2).Width = 15;
+            sheet.Column(3).Width = 25;
+            sheet.Column(4).Width = 25;
+            sheet.Column(5).Width = 25;
+            sheet.Cells["A1:E1"].Style.Font.Bold = true; // Жирный шрифт
+            
+            foreach (Data d in MyData.Items)
+            {
+                row = d.NumberPayment + 1;
+                sheet.Cells[row, 1].Value = d.DataPayment;
+                sheet.Cells[row, 2].Value = d.PaymentSum;
+                sheet.Cells[row, 3].Value = d.MainDebt;
+                sheet.Cells[row, 4].Value = d.Precent;
+                sheet.Cells[row, 5].Value = d.CreditAmount;
+            }
+            
+            sheet.Cells[row+2, 1].Value = "Итого по кредиту";
+            sheet.Cells[$"A{row+2}:A{row+3}"].Style.Font.Bold = true; // Жирный шрифт
+            sheet.Cells[row+3, 1].Value = "Ежемесячный платёж";
+
+            sheet.Cells[row+2, 2].Value = itog.Text;
+            sheet.Cells[row+2, 3].Value = sum.Text;
+            sheet.Cells[row+2, 4].Value = overp.Text;
+            sheet.Cells[row+3, 2].Value = everymon.Text;
+
+            sheet.Protection.IsProtected = true; // Защита от редактирования
+            return package.GetAsByteArray();
         }
     }
 }

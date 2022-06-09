@@ -48,3 +48,15 @@ C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный 
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\obj\Debug\net5.0-windows\toFormat.baml
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
 C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\itextsharp.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\EPPlus.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\EPPlus.Interfaces.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\EPPlus.System.Drawing.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\d\Repositories\Шарага\мдк\курсовая\Кредитный калькулятор\bin\Debug\net5.0-windows\Microsoft.IO.RecyclableMemoryStream.dll

@@ -1,7 +1,7 @@
 ﻿[
   {
     "DataPayment": "июнь 2022 г.",
-    "NumberPayment": "1",
+    "NumberPayment": 1,
     "PaymentSum": "9 414,69",
     "CreditAmount": "192 585,31",
     "Precent": "2 000,00",
@@ -9,7 +9,7 @@
   },
   {
     "DataPayment": "июль 2022 г.",
-    "NumberPayment": "2",
+    "NumberPayment": 2,
     "PaymentSum": "9 414,69",
     "CreditAmount": "185 096,46",
     "Precent": "1 925,85",
@@ -17,7 +17,7 @@
   },
   {
     "DataPayment": "август 2022 г.",
-    "NumberPayment": "3",
+    "NumberPayment": 3,
     "PaymentSum": "9 414,69",
     "CreditAmount": "177 532,73",
     "Precent": "1 850,96",
@@ -25,7 +25,7 @@
   },
   {
     "DataPayment": "сентябрь 2022 г.",
-    "NumberPayment": "4",
+    "NumberPayment": 4,
     "PaymentSum": "9 414,69",
     "CreditAmount": "169 893,37",
     "Precent": "1 775,33",
@@ -33,7 +33,7 @@
   },
   {
     "DataPayment": "октябрь 2022 г.",
-    "NumberPayment": "5",
+    "NumberPayment": 5,
     "PaymentSum": "9 414,69",
     "CreditAmount": "162 177,61",
     "Precent": "1 698,93",
@@ -41,7 +41,7 @@
   },
   {
     "DataPayment": "ноябрь 2022 г.",
-    "NumberPayment": "6",
+    "NumberPayment": 6,
     "PaymentSum": "9 414,69",
     "CreditAmount": "154 384,69",
     "Precent": "1 621,78",
@@ -49,7 +49,7 @@
   },
   {
     "DataPayment": "декабрь 2022 г.",
-    "NumberPayment": "7",
+    "NumberPayment": 7,
     "PaymentSum": "9 414,69",
     "CreditAmount": "146 513,84",
     "Precent": "1 543,85",
@@ -57,7 +57,7 @@
   },
   {
     "DataPayment": "январь 2023 г.",
-    "NumberPayment": "8",
+    "NumberPayment": 8,
     "PaymentSum": "9 414,69",
     "CreditAmount": "138 564,28",
     "Precent": "1 465,14",
@@ -65,7 +65,7 @@
   },
   {
     "DataPayment": "февраль 2023 г.",
-    "NumberPayment": "9",
+    "NumberPayment": 9,
     "PaymentSum": "9 414,69",
     "CreditAmount": "130 535,23",
     "Precent": "1 385,64",
@@ -73,7 +73,7 @@
   },
   {
     "DataPayment": "март 2023 г.",
-    "NumberPayment": "10",
+    "NumberPayment": 10,
     "PaymentSum": "9 414,69",
     "CreditAmount": "122 425,89",
     "Precent": "1 305,35",
@@ -81,7 +81,7 @@
   },
   {
     "DataPayment": "апрель 2023 г.",
-    "NumberPayment": "11",
+    "NumberPayment": 11,
     "PaymentSum": "9 414,69",
     "CreditAmount": "114 235,46",
     "Precent": "1 224,26",
@@ -89,7 +89,7 @@
   },
   {
     "DataPayment": "май 2023 г.",
-    "NumberPayment": "12",
+    "NumberPayment": 12,
     "PaymentSum": "9 414,69",
     "CreditAmount": "105 963,12",
     "Precent": "1 142,35",
@@ -97,7 +97,7 @@
   },
   {
     "DataPayment": "июнь 2023 г.",
-    "NumberPayment": "13",
+    "NumberPayment": 13,
     "PaymentSum": "9 414,69",
     "CreditAmount": "97 608,05",
     "Precent": "1 059,63",
@@ -105,7 +105,7 @@
   },
   {
     "DataPayment": "июль 2023 г.",
-    "NumberPayment": "14",
+    "NumberPayment": 14,
     "PaymentSum": "9 414,69",
     "CreditAmount": "89 169,44",
     "Precent": "976,08",
@@ -113,7 +113,7 @@
   },
   {
     "DataPayment": "август 2023 г.",
-    "NumberPayment": "15",
+    "NumberPayment": 15,
     "PaymentSum": "9 414,69",
     "CreditAmount": "80 646,44",
     "Precent": "891,69",
@@ -121,7 +121,7 @@
   },
   {
     "DataPayment": "сентябрь 2023 г.",
-    "NumberPayment": "16",
+    "NumberPayment": 16,
     "PaymentSum": "9 414,69",
     "CreditAmount": "72 038,21",
     "Precent": "806,46",
@@ -129,23 +129,23 @@
   },
   {
     "DataPayment": "октябрь 2023 г.",
-    "NumberPayment": "17",
+    "NumberPayment": 17,
     "PaymentSum": "9 414,69",
     "CreditAmount": "63 343,90",
     "Precent": "720,38",
     "MainDebt": "8 694,31"
   },
   {
-    "DataPayment": "октябрь 2023 г.",
-    "NumberPayment": "18",
+    "DataPayment": "ноябрь 2023 г.",
+    "NumberPayment": 18,
     "PaymentSum": "9 414,69",
     "CreditAmount": "54 562,64",
     "Precent": "633,44",
     "MainDebt": "8 781,26"
   },
   {
-    "DataPayment": "ноябрь 2023 г.",
-    "NumberPayment": "19",
+    "DataPayment": "декабрь 2023 г.",
+    "NumberPayment": 19,
     "PaymentSum": "9 414,69",
     "CreditAmount": "45 693,57",
     "Precent": "545,63",
@@ -153,7 +153,7 @@
   },
   {
     "DataPayment": "декабрь 2023 г.",
-    "NumberPayment": "20",
+    "NumberPayment": 20,
     "PaymentSum": "9 414,69",
     "CreditAmount": "36 735,81",
     "Precent": "456,94",
@@ -161,7 +161,7 @@
   },
   {
     "DataPayment": "январь 2024 г.",
-    "NumberPayment": "21",
+    "NumberPayment": 21,
     "PaymentSum": "9 414,69",
     "CreditAmount": "27 688,48",
     "Precent": "367,36",
@@ -169,7 +169,7 @@
   },
   {
     "DataPayment": "февраль 2024 г.",
-    "NumberPayment": "22",
+    "NumberPayment": 22,
     "PaymentSum": "9 414,69",
     "CreditAmount": "18 550,67",
     "Precent": "276,88",
@@ -177,7 +177,7 @@
   },
   {
     "DataPayment": "март 2024 г.",
-    "NumberPayment": "23",
+    "NumberPayment": 23,
     "PaymentSum": "9 414,69",
     "CreditAmount": "9 321,48",
     "Precent": "185,51",
@@ -185,7 +185,7 @@
   },
   {
     "DataPayment": "апрель 2024 г.",
-    "NumberPayment": "24",
+    "NumberPayment": 24,
     "PaymentSum": "9 414,69",
     "CreditAmount": "0,00",
     "Precent": "93,21",

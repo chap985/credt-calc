@@ -53,8 +53,8 @@
                 <Label Content="Результаты" HorizontalContentAlignment="Center" FontFamily="Bahnschrift" FontWeight="UltraBold"/>
                 <Label Content="Сумма платежа (руб)" />
                 <TextBox Name="itog" Text="" Margin="10,0,10,0" IsEnabled="False" />
-                <Label Content="Ежемесячная ставка (%)" />
-                <TextBox Name="monpercent" Text="" Margin="10,0,10,0" IsEnabled="False" />
+                <!-- <Label Content="Ежемесячная ставка (%)" /> -->
+                <!-- <TextBox Name="monpercent" Text="" Margin="10,0,10,0" IsEnabled="False" /> -->
                 <Label Content="Переплата (Начисленные проценты)" />
                 <TextBox Name="overp" Text="" Margin="10,0,10,0" IsEnabled="False" />
                 <Label Content="Ежемесячный платеж (Платёж раз в месяц)" />
